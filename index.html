@@ -185,32 +185,38 @@
   <p class="eyebrow">Huda for iOS &amp; Android</p>
   <h1>Privacy Policy</h1>
   <p class="meta">
-    <strong>AAZK Solutions LLC</strong> &nbsp;·&nbsp; Effective 18 September 2026 &nbsp;·&nbsp;
+    <strong>AAZK Solutions LLC</strong> &nbsp;·&nbsp; Effective 30 September 2026 &nbsp;·&nbsp;
     Applies to the Huda mobile app (<code>com.aazksolutions.huda</code>)
   </p>
 
   <div class="lede">
     <p><strong>Huda does not collect your personal information.</strong> There are no accounts, no sign-in, no analytics, no advertising, and no tracking of any kind.</p>
-    <p>Your location never leaves your device. Your reading, bookmarks, memorisation progress and settings never leave your device. We have no server that stores anything about you, because we have no server.</p>
+    <p>Prayer times and the qibla are calculated on your device, and your location is never sent to us. The one feature that sends a location anywhere is Mosque Finder, and only when you use it: it sends an approximate location to OpenStreetMap to find mosques near you. Your reading, bookmarks, memorisation progress, recitation and settings never leave your device. We have no server that stores anything about you, because we have no server.</p>
   </div>
 
   <h2>What stays on your device</h2>
-  <p>Everything Huda remembers about you is written to your phone's private app storage and is never transmitted anywhere. It is removed when you uninstall the app:</p>
+  <p>Everything Huda remembers about you is written to your phone's private app storage and is never uploaded. It is removed when you uninstall the app:</p>
   <ul>
     <li>Your reading position, bookmarks and bookmark categories</li>
     <li>Memorisation profiles, lessons and review progress</li>
     <li>Daily adhkar counters and any custom adhkar you write</li>
     <li>Reader preferences — Arabic script and font, text sizes, translation choice, tajweed colours</li>
-    <li>Your chosen prayer calculation method, Asr madhab and last known coordinates</li>
-    <li>Downloaded recitation audio files and the record of which ones you have</li>
+    <li>Your chosen prayer calculation method, Asr madhab, last known coordinates and your five most recent named locations</li>
+    <li>Downloaded recitation audio, mushaf page fonts and the optional listening model, and the record of which ones you have</li>
+    <li>Memorisation test reports (the latest ten per student)</li>
+    <li>Recent Mosque Finder results, kept for up to a day so they show while a new search runs</li>
   </ul>
 
   <h2>Location</h2>
-  <p>If you choose to share your location, Huda uses it to calculate prayer times and the direction of the qibla. That calculation happens entirely on your device using an offline astronomical library. Your coordinates are stored only on your device so the app can work without asking again, and they are never sent to us or to anyone else.</p>
-  <p>You can decline the permission or revoke it later in your system settings. Prayer times and qibla will stop working; everything else in the app continues to function.</p>
+  <p>If you choose to share your location, Huda uses it to calculate prayer times and the direction of the qibla. That calculation happens entirely on your device using an offline astronomical library. Your coordinates are stored only on your device so the app can work without asking again, and they are never sent to us.</p>
+  <p><strong>Mosque Finder</strong> is optional. When you open it, it sends an approximate location — your location or the coordinates you entered, rounded to two decimal places (about a kilometre) — to OpenStreetMap's Overpass service to find mosques nearby. That service also sees your IP address, as any web request does. Your precise location is never included. Opening directions or a mosque's website takes you to that outside service, under its own privacy policy.</p>
+  <p>You can decline the permission or revoke it later in your system settings, and you can type a latitude and longitude instead, in Settings &gt; Prayer. Prayer times, the qibla and Mosque Finder all work from typed coordinates; only the live compass needs your permission.</p>
+
+  <h2>Microphone</h2>
+  <p>Huda's optional listening feature can follow your recitation and help you practise. It asks for the microphone only when you start listening. Your voice is processed entirely on your device by a model you download once; audio is never uploaded, recorded to a file or kept after listening stops. Test reports store the verses and possible word mistakes, never audio.</p>
 
   <h2>When the app contacts the internet</h2>
-  <p>Huda ships the entire Qur'an, its translations, transliteration and the adhkar inside the app, so ordinary reading works with no network at all. There are four cases where the app makes a request, and in every case the only thing the receiving server learns is what any web request reveals: your device's IP address, and which file was asked for.</p>
+  <p>Huda ships the entire Qur'an, its translations, transliteration and the adhkar inside the app, so ordinary reading works with no network at all. The app makes a request only in the cases below. Except for Mosque Finder, the only thing the receiving server learns is what any web request reveals: your device's IP address, and which file was asked for.</p>
   <div class="scroll">
     <table>
       <thead>
@@ -228,9 +234,19 @@
           <td>Only when you download or play a whole surah</td>
         </tr>
         <tr>
-          <td>cdn.jsdelivr.net</td>
-          <td>Ibn Kathīr tafsir for a single verse</td>
-          <td>Only when you open tafsir for that verse</td>
+          <td>static-cdn.tarteel.ai</td>
+          <td>Page fonts for the 1421H and 1441H mushaf prints</td>
+          <td>Only when you choose one of those prints</td>
+        </tr>
+        <tr>
+          <td>huggingface.co</td>
+          <td>The optional on-device listening model</td>
+          <td>Only when you choose to download it</td>
+        </tr>
+        <tr>
+          <td>overpass-api.de</td>
+          <td>Mosque Finder: mosques near an approximate location (rounded to two decimals)</td>
+          <td>Only when you open Mosque Finder</td>
         </tr>
         <tr>
           <td>u.expo.dev</td>
@@ -240,7 +256,7 @@
       </tbody>
     </table>
   </div>
-  <p>The first three happen only because you asked for something. The fourth is automatic: the update service is operated by Expo, and the app tells it which version of Huda you are running so it can answer whether a newer one exists. It is not given any information about you or how you use the app.</p>
+  <p>Every request except the last happens only because you asked for something. The last is automatic: the update service is operated by Expo, and the app tells it which version of Huda you are running so it can answer whether a newer one exists. It is not given any information about you or how you use the app.</p>
   <p>These services are operated independently of us and have their own privacy practices. We do not send them anything about you beyond the request itself.</p>
 
   <h2>Notifications</h2>
@@ -270,7 +286,7 @@
 
   <footer>
     <p>Huda is developed by AAZK Solutions LLC.</p>
-    <p>Last updated 18 September 2026.</p>
+    <p>Last updated 30 September 2026.</p>
   </footer>
 </div>
 </body>
