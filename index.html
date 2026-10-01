@@ -191,7 +191,7 @@
 
   <div class="lede">
     <p><strong>Huda does not collect your personal information.</strong> There are no accounts, no sign-in, no analytics, no advertising, and no tracking of any kind.</p>
-    <p>Prayer times and the qibla are calculated on your device, and your location is never sent to us. The one feature that sends a location anywhere is Mosque Finder, and only when you use it: it sends an approximate location to OpenStreetMap to find mosques near you. Your reading, bookmarks, memorisation progress, recitation and settings never leave your device. We have no server that stores anything about you, because we have no server.</p>
+    <p>Prayer times and the qibla are calculated on your device, and your location is never sent to us. Phone Mosque Finder asks before sending approximate coordinates to Apple Maps or Google Maps. Car-display mosque discovery and older app versions use OpenStreetMap’s Overpass service when you use that feature. Your reading, bookmarks, memorisation progress, recitation and settings never leave your device. We have no server that stores anything about you, because we have no server.</p>
   </div>
 
   <h2>What stays on your device</h2>
@@ -209,7 +209,8 @@
 
   <h2>Location</h2>
   <p>If you choose to share your location, Huda uses it to calculate prayer times and the direction of the qibla. That calculation happens entirely on your device using an offline astronomical library. Your coordinates are stored only on your device so the app can work without asking again, and they are never sent to us.</p>
-  <p><strong>Mosque Finder</strong> is optional. When you open it, it sends an approximate location — your location or the coordinates you entered, rounded to two decimal places (about a kilometre) — to OpenStreetMap's Overpass service to find mosques nearby. That service also sees your IP address, as any web request does. Your precise location is never included. Opening directions or a mosque's website takes you to that outside service, under its own privacy policy.</p>
+  <p><strong>Phone Mosque Finder</strong> opens an external map only after you confirm sharing. Huda sends the search term “mosques” and your selected coordinates rounded to three decimal places (roughly 100 metres in latitude) to Apple Maps or Google Maps. The coordinates may come from your saved location, manual entry, or a current location you request. Opening the page does not send a location. You can cancel sharing or enter coordinates without granting device-location permission. Your saved prayer location is unchanged. The chosen provider receives the request and may receive network information such as your IP address; its privacy policy applies.</p>
+  <p><strong>Car displays and older versions:</strong> CarPlay and Android Auto mosque discovery, and older phone versions, continue to query OpenStreetMap’s Overpass services using rounded coordinates. Those services receive your IP address. Directions open the selected external maps service. <a href="https://www.apple.com/legal/privacy/data/en/apple-maps/">Apple Maps privacy</a> · <a href="https://policies.google.com/privacy">Google privacy</a>.</p>
   <p>You can decline the permission or revoke it later in your system settings, and you can type a latitude and longitude instead, in Settings &gt; Prayer. Prayer times, the qibla and Mosque Finder all work from typed coordinates; only the live compass needs your permission.</p>
 
   <h2>Microphone</h2>
@@ -244,9 +245,14 @@
           <td>Only when you choose to download it</td>
         </tr>
         <tr>
-          <td>overpass-api.de</td>
-          <td>Mosque Finder: mosques near an approximate location (rounded to two decimals)</td>
-          <td>Only when you open Mosque Finder</td>
+          <td>overpass-api.de / overpass.private.coffee</td>
+          <td>Car-display and older-version mosque searches near an approximate location</td>
+          <td>When you use mosque discovery in the car or an older phone version</td>
+        </tr>
+        <tr>
+          <td>maps.apple.com / google.com/maps</td>
+          <td>Phone mosque search with approximate coordinates</td>
+          <td>Only after you confirm sharing and opening Maps</td>
         </tr>
         <tr>
           <td>u.expo.dev</td>
