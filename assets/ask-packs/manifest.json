@@ -1,0 +1,548 @@
+{
+  "packs": [
+    {
+      "key": "tafsir",
+      "title": "Ibn Kathir",
+      "file": "tafsir.json",
+      "bytes": 21726211,
+      "sha256": "66e2d9490709300528dc28ebb80bcd5e3ed168bc3b7be35b1773ebe2c6667d60",
+      "sources": 1902,
+      "chunks": 18386,
+      "parts": [
+        {
+          "file": "tafsir.000.txt",
+          "bytes": 518181,
+          "sha256": "530ce85383a1334010bfda71b2fd61bbd818c7b30305f6f3f3b857b19ed8fe8b"
+        },
+        {
+          "file": "tafsir.001.txt",
+          "bytes": 512985,
+          "sha256": "888ffe4476197e6833070ec44aca56c83d22348d65fb86cd82a4df62d9f31140"
+        },
+        {
+          "file": "tafsir.002.txt",
+          "bytes": 510451,
+          "sha256": "5c8e4565fc9fcf1a0798f2a71466f799c6d838abea02bd833d2911a7a51a7c0f"
+        },
+        {
+          "file": "tafsir.003.txt",
+          "bytes": 518606,
+          "sha256": "f15697e5b9237d0d2b7699762527ebd463bda58e5ceea720e852f7f1b6c35158"
+        },
+        {
+          "file": "tafsir.004.txt",
+          "bytes": 520079,
+          "sha256": "409a30ac0f5a8f163e428f03b3d83ef081de127e90853f3945d65976e9638465"
+        },
+        {
+          "file": "tafsir.005.txt",
+          "bytes": 520432,
+          "sha256": "ab2883b16272df9ed43634fad7e8999039b6b636ed12ddc3430f5f12930a631b"
+        },
+        {
+          "file": "tafsir.006.txt",
+          "bytes": 527039,
+          "sha256": "5e9cc11569b26290447b50edc439c2b9f957d2a12064f3a3091f9cbf818524c8"
+        },
+        {
+          "file": "tafsir.007.txt",
+          "bytes": 515988,
+          "sha256": "4a97f4afc54c36e14be8aec56548d59b6c69722fcc95557d73f27a1e3cfcf9d5"
+        },
+        {
+          "file": "tafsir.008.txt",
+          "bytes": 519154,
+          "sha256": "d40919f7733f8d2776ea600b1b3214c8ef148c4662ed23eff0f673f660adec77"
+        },
+        {
+          "file": "tafsir.009.txt",
+          "bytes": 514441,
+          "sha256": "c3649cfca7bf25746b151664d55afbc0ebe9c8730202a571ab072caa11ae7e04"
+        },
+        {
+          "file": "tafsir.010.txt",
+          "bytes": 528585,
+          "sha256": "07ec59bb8311b8a1da60c51c745e9f0bac4a87dd689f16801510fef4e09933ca"
+        },
+        {
+          "file": "tafsir.011.txt",
+          "bytes": 519310,
+          "sha256": "de0b9874e536112fbccda2820983fd914a2fe32421c829134b99074b8982dc1b"
+        },
+        {
+          "file": "tafsir.012.txt",
+          "bytes": 522264,
+          "sha256": "1a1f9605f79c323642b0cbcf5dad9de45df39f81899c3d8844b5ede43e907272"
+        },
+        {
+          "file": "tafsir.013.txt",
+          "bytes": 518527,
+          "sha256": "2d4d022c0f3d8379b5abf7b03e9fb7bc8c20b4c490671bea568639ab87a712a5"
+        },
+        {
+          "file": "tafsir.014.txt",
+          "bytes": 524198,
+          "sha256": "2f8b082c192f2f50b44d092e2b131655365ca329a10f0b649d360fea428adc64"
+        },
+        {
+          "file": "tafsir.015.txt",
+          "bytes": 516122,
+          "sha256": "c55fdcb0fbc3b526c758b73d56c9f371cd5c424088627e1d23639fb090d525b0"
+        },
+        {
+          "file": "tafsir.016.txt",
+          "bytes": 519045,
+          "sha256": "7f6e97618682e03a96e331a33bb1a5fac719549b6b44e416f682f85560b2f490"
+        },
+        {
+          "file": "tafsir.017.txt",
+          "bytes": 526741,
+          "sha256": "a15aba8d9ce1cb604c39c5df0c4fee54266d8c6bd54250452fef027f216bd5ee"
+        },
+        {
+          "file": "tafsir.018.txt",
+          "bytes": 520815,
+          "sha256": "e37b05324b85f9d0e9edb0a5529ccc98ef8371c1e63c90d16d57d35d87ad29d5"
+        },
+        {
+          "file": "tafsir.019.txt",
+          "bytes": 522888,
+          "sha256": "f68b6540199c69d7f735e8aadad62c612ce6cf0b5ddd8c7391de4eb44bcb1a73"
+        },
+        {
+          "file": "tafsir.020.txt",
+          "bytes": 519015,
+          "sha256": "51badc726236ae03edac7fbf49a7895acad65b20bd79461f7afc913f60146f41"
+        },
+        {
+          "file": "tafsir.021.txt",
+          "bytes": 520121,
+          "sha256": "62b416016bf2e018713902b591d949a2a3664da97182f03b988db75b19606400"
+        },
+        {
+          "file": "tafsir.022.txt",
+          "bytes": 480101,
+          "sha256": "006b000886f8c6cfab4c736e05cb969685264a586d00451a01f26e4ea55d1e5d"
+        },
+        {
+          "file": "tafsir.023.txt",
+          "bytes": 450000,
+          "sha256": "58e859ebed634c5982945cc7ea0bb196210c7a76d094c0c156509836482e98c3"
+        },
+        {
+          "file": "tafsir.024.txt",
+          "bytes": 450000,
+          "sha256": "4f93438b4a55cd64738deb481069ce81980c6fa7fad5907cedc7695ad4b9d45b"
+        },
+        {
+          "file": "tafsir.025.txt",
+          "bytes": 450000,
+          "sha256": "d8571b7aec0219ce7904840d3598c3c5a4596ecf5d28b33585caf539db1ea61e"
+        },
+        {
+          "file": "tafsir.026.txt",
+          "bytes": 450000,
+          "sha256": "534f1d5de855fd20e19717a64c22f631f26d4c2233bf0f7df35b2dd938c91cf8"
+        },
+        {
+          "file": "tafsir.027.txt",
+          "bytes": 450000,
+          "sha256": "85db730ea6f94920a01b7451e7ed021312566839760df603fe301a83c0a783c3"
+        },
+        {
+          "file": "tafsir.028.txt",
+          "bytes": 450000,
+          "sha256": "da6571eaf1d5161b8cb8b0d14695f97a9467372e8a6e125f1b32c4d46f4bae0d"
+        },
+        {
+          "file": "tafsir.029.txt",
+          "bytes": 450000,
+          "sha256": "cc5c1409d0720c72d29fe1b32da352ac5c9ff9629c02b38510b962c7b064dc40"
+        },
+        {
+          "file": "tafsir.030.txt",
+          "bytes": 450000,
+          "sha256": "315276132ab05ec9c77b16f82102c73012c5c71eda12154d2d3be82094e86744"
+        },
+        {
+          "file": "tafsir.031.txt",
+          "bytes": 450000,
+          "sha256": "48e3980cef159234e03acb67250f5a8f1d23a32241989d78da07054628d0138b"
+        },
+        {
+          "file": "tafsir.032.txt",
+          "bytes": 450000,
+          "sha256": "c6158c6c71a61ee35a340d9beb895d34b8ae4e1f65b3f6a695cf7b945c886526"
+        },
+        {
+          "file": "tafsir.033.txt",
+          "bytes": 450000,
+          "sha256": "e5a888f7c183344f04efbfdc8085df620ca348c20fc95d21940e15a2435ab6d1"
+        },
+        {
+          "file": "tafsir.034.txt",
+          "bytes": 450000,
+          "sha256": "5dac98653d3d73db14ef921e71955f1a689361ef87825a2bd3aa3eab89635dda"
+        },
+        {
+          "file": "tafsir.035.txt",
+          "bytes": 450000,
+          "sha256": "e9483e18c4101aab2cc2f37ff76189d8aa387ca10a86d4e52d06834f8e493bfb"
+        },
+        {
+          "file": "tafsir.036.txt",
+          "bytes": 450000,
+          "sha256": "0ea625abd36a104560893f39b50313c8560b68a02c28a2419d927f6552fb210a"
+        },
+        {
+          "file": "tafsir.037.txt",
+          "bytes": 450000,
+          "sha256": "aa08235a2139147e1f458235de29e47ed14b4a4ab8f3262a42781ccf8a7a2656"
+        },
+        {
+          "file": "tafsir.038.txt",
+          "bytes": 450000,
+          "sha256": "96f232a882f3b131782a0ddaa1d6e9be73e8c90188848510b47c8d9c65992ff5"
+        },
+        {
+          "file": "tafsir.039.txt",
+          "bytes": 450000,
+          "sha256": "07f5a927156c271ddbd52b9cad64314b261b7a63ce91cc81f1d6a0f5b6752f94"
+        },
+        {
+          "file": "tafsir.040.txt",
+          "bytes": 450000,
+          "sha256": "da80fdf1d0f4685b46ae87296e98909e3e573b54b2341a9090ca375eaec37bc7"
+        },
+        {
+          "file": "tafsir.041.txt",
+          "bytes": 450000,
+          "sha256": "497e12f8c7d1447f39da7f0891f920e24d47f48dc8d2d4824360d0c9dab5a2f5"
+        },
+        {
+          "file": "tafsir.042.txt",
+          "bytes": 450000,
+          "sha256": "40f9b118d7e618812f2ea656468c8cbc1f88d9482a2dcb719cd2587034c2739f"
+        },
+        {
+          "file": "tafsir.043.txt",
+          "bytes": 450000,
+          "sha256": "f305f0e137ef221fa85ae06f6b6ea221b66a88381792f8a387a5a2aced957fbd"
+        },
+        {
+          "file": "tafsir.044.txt",
+          "bytes": 361123,
+          "sha256": "becc861a7562be5140953d5821f4e259d72329e6a2dec190808484154e697c22"
+        }
+      ]
+    },
+    {
+      "key": "bukhari",
+      "title": "Sahih al-Bukhari",
+      "file": "bukhari.json",
+      "bytes": 10458106,
+      "sha256": "0846747c6c24aea30b184bb0f9c7bb5ef01b4ab7f06c66da2503018bb45b4463",
+      "sources": 7580,
+      "chunks": 9936,
+      "parts": [
+        {
+          "file": "bukhari.000.txt",
+          "bytes": 453279,
+          "sha256": "69e89ed4415897a40706efe36a1370dd775582b72ce2a6dd217af12ebde064dc"
+        },
+        {
+          "file": "bukhari.001.txt",
+          "bytes": 453201,
+          "sha256": "d1fda12bf9f65cc36bf819b898109cb4aff8d7f6d668775ec5c51a4cff698193"
+        },
+        {
+          "file": "bukhari.002.txt",
+          "bytes": 453420,
+          "sha256": "61d0d9a105911ae49fe8c46f5b083f12d51f1a35633260551692aef026b378dd"
+        },
+        {
+          "file": "bukhari.003.txt",
+          "bytes": 453407,
+          "sha256": "539e6a50583e7772d8c53b69238e0187117e13d04e91e9ab246700fd41a5825c"
+        },
+        {
+          "file": "bukhari.004.txt",
+          "bytes": 452759,
+          "sha256": "beb7788126b090b1dc477cd7ea3163a1896dbabe4f0af754ccbc2239803cfef6"
+        },
+        {
+          "file": "bukhari.005.txt",
+          "bytes": 452762,
+          "sha256": "475d3c0c8e51f813a07d44100bb5035488f145a7803acd5c8d6b2e284697eb3f"
+        },
+        {
+          "file": "bukhari.006.txt",
+          "bytes": 452912,
+          "sha256": "b7e73fee4c1c39257c203a34e4be8c7255a361af974a2d5ac8dc51e490048468"
+        },
+        {
+          "file": "bukhari.007.txt",
+          "bytes": 452849,
+          "sha256": "0418120e2d5754118ea19f5eace7ded23e272737875771b0fb1d38a844252019"
+        },
+        {
+          "file": "bukhari.008.txt",
+          "bytes": 453582,
+          "sha256": "90da8c669b7b4f442b5f3f401f9a03eb03a0f79bad4f05a0e483b979cbcecd1a"
+        },
+        {
+          "file": "bukhari.009.txt",
+          "bytes": 453312,
+          "sha256": "9c7ea3325d61126e8b23668392646e323a68f28b436217f952c218fc9ee4c18d"
+        },
+        {
+          "file": "bukhari.010.txt",
+          "bytes": 452957,
+          "sha256": "0decd861ce0f779c121be8c9c398a5cbd80787f237b47caedfd8b66e816a1be7"
+        },
+        {
+          "file": "bukhari.011.txt",
+          "bytes": 450331,
+          "sha256": "ceda5ecfd58aa5f128b01548bda3a00f247924ca9d619c5fe377fde932c400af"
+        },
+        {
+          "file": "bukhari.012.txt",
+          "bytes": 450000,
+          "sha256": "a32fde990c9d003e826187f1f5e229a9ec2371c46b395bf89009b7c4b045a672"
+        },
+        {
+          "file": "bukhari.013.txt",
+          "bytes": 450000,
+          "sha256": "6d3046e4670cf0fced1da2d56ca158ba94747fc7ce65c944ca20299f1cbcf3e4"
+        },
+        {
+          "file": "bukhari.014.txt",
+          "bytes": 450000,
+          "sha256": "6daeed7f74096ef8e836f8a8ccde48113685cc7c625acb0b1405ca2b86994757"
+        },
+        {
+          "file": "bukhari.015.txt",
+          "bytes": 450000,
+          "sha256": "08471d982107263a3fcc209d061c632440217e920eb028d7e8ca4f0160e66ca3"
+        },
+        {
+          "file": "bukhari.016.txt",
+          "bytes": 450000,
+          "sha256": "55860724a0055b94d33e14bbb3e1f1110c49adb43c0c25f455d182831149e6e5"
+        },
+        {
+          "file": "bukhari.017.txt",
+          "bytes": 450000,
+          "sha256": "4b5252cb1ccbe8cc0e3511b1974766ad451563fdd5fc334d1e642e54ee52f814"
+        },
+        {
+          "file": "bukhari.018.txt",
+          "bytes": 450000,
+          "sha256": "c512cdf51a10814effb8f13acef5c30b65368b77ff1a68f01987f2335e05360c"
+        },
+        {
+          "file": "bukhari.019.txt",
+          "bytes": 450000,
+          "sha256": "32ec7f30e60fef966bf433f21883916718eba362dec429120f621c899bc1d583"
+        },
+        {
+          "file": "bukhari.020.txt",
+          "bytes": 450000,
+          "sha256": "7d5ac199397fcab4e2e79c50d03ac3108e63aed41ad1e9e009528a71e33df47f"
+        },
+        {
+          "file": "bukhari.021.txt",
+          "bytes": 450000,
+          "sha256": "bd108642b551dcd777c2f4733223fbfeab7fcd011812f29c2c8c2e76b9ce72e0"
+        },
+        {
+          "file": "bukhari.022.txt",
+          "bytes": 450000,
+          "sha256": "74ef2b955eb6c626950594359e73c75a4d1b7d7d9c6963437fa879920cb6c1ee"
+        },
+        {
+          "file": "bukhari.023.txt",
+          "bytes": 73335,
+          "sha256": "3aed713df3b8bd123c48aad8850e462edecb1811eee0f399f8e5ab680b489623"
+        }
+      ]
+    },
+    {
+      "key": "muslim",
+      "title": "Sahih Muslim",
+      "file": "muslim.json",
+      "bytes": 8899555,
+      "sha256": "37ad9809cef888640dcfafcde7aa2a3a5766a891d19f67f905550aafbb19deda",
+      "sources": 7360,
+      "chunks": 8846,
+      "parts": [
+        {
+          "file": "muslim.000.txt",
+          "bytes": 452118,
+          "sha256": "d3483c0eb13c6854c51c267ac9555b05caa6473026922d5c5de99d8de64cb325"
+        },
+        {
+          "file": "muslim.001.txt",
+          "bytes": 453003,
+          "sha256": "6c52dd46119d0c43b6ea4ce4f9c89585d537babb8897cef83addee2f10094a1c"
+        },
+        {
+          "file": "muslim.002.txt",
+          "bytes": 452630,
+          "sha256": "4098ee87556cc2680c3deb63bad526a63ad6ad1b1359597fe2429c8498631fbc"
+        },
+        {
+          "file": "muslim.003.txt",
+          "bytes": 452628,
+          "sha256": "0852a1f03ee6f2c758ccc9aa3e165351aeab75c7cb8e9ff6381abf6c4270c1fc"
+        },
+        {
+          "file": "muslim.004.txt",
+          "bytes": 452786,
+          "sha256": "ca55b730232b535fa09d3e474da615f898ba61d6e3b25913092dd20e3921dc4e"
+        },
+        {
+          "file": "muslim.005.txt",
+          "bytes": 452417,
+          "sha256": "6ff9403d795adbad93aa962e3bb042221fec4fdee49ae6de9c343a83e9963204"
+        },
+        {
+          "file": "muslim.006.txt",
+          "bytes": 453068,
+          "sha256": "081b8798038f4af35685f3afad6e3e0cb939737b0c53e8c833ddeef38efa6358"
+        },
+        {
+          "file": "muslim.007.txt",
+          "bytes": 452707,
+          "sha256": "67996aaf6242c4fdba2d8bb48222e91a64286bc74737d1ca3f24ebec0577c118"
+        },
+        {
+          "file": "muslim.008.txt",
+          "bytes": 452404,
+          "sha256": "c1d30a9daa648972dc72fcd54372def038abe7a2614acaa7f8ab66685d6e1e94"
+        },
+        {
+          "file": "muslim.009.txt",
+          "bytes": 450029,
+          "sha256": "4326fa74c0989eb5734e671d92f1d87eabe67d5333a308217adfd5735f2b0503"
+        },
+        {
+          "file": "muslim.010.txt",
+          "bytes": 450000,
+          "sha256": "8cb2170c86701ce4d512e64f8df4fc4a247047d67b0adc62321792f4f1362fe3"
+        },
+        {
+          "file": "muslim.011.txt",
+          "bytes": 450000,
+          "sha256": "ceefc7853fe399ebfb3ea6c2924434282cdac80698f9459b62216c69f3235d7a"
+        },
+        {
+          "file": "muslim.012.txt",
+          "bytes": 450000,
+          "sha256": "d5a70602f79c7e6bce581e6808674934fcb5d5f42e919f4d15a9c4b986e2f954"
+        },
+        {
+          "file": "muslim.013.txt",
+          "bytes": 450000,
+          "sha256": "89f190e75e4ddbfaf1cadae65c4e02ec9d27fcd28f8529fc3ae4357d0881b5af"
+        },
+        {
+          "file": "muslim.014.txt",
+          "bytes": 450000,
+          "sha256": "ff46718e09b1710adae13d4bc8d569659eaed6ac260c73452c04140dd201e1a5"
+        },
+        {
+          "file": "muslim.015.txt",
+          "bytes": 450000,
+          "sha256": "1e67019b34de86d9621e4553f6264b9fdb1f20f82438a4c253fc68d93866aa49"
+        },
+        {
+          "file": "muslim.016.txt",
+          "bytes": 450000,
+          "sha256": "32ad65ccf3e9e4bdc3102e8c4278b6914001c2bb129b1d232db485578e18ed48"
+        },
+        {
+          "file": "muslim.017.txt",
+          "bytes": 450000,
+          "sha256": "98aacdf619e680e1967aafd326215fa58fbf8e4840115f2b75af9be4dcc1c646"
+        },
+        {
+          "file": "muslim.018.txt",
+          "bytes": 450000,
+          "sha256": "59a5330a578043ec85d16b3d5344117299b89b7f78c1b699f2407cf2b24ec08a"
+        },
+        {
+          "file": "muslim.019.txt",
+          "bytes": 325765,
+          "sha256": "d39ef5a4afd17dcc720c0775b73a4f1715ac58c61ff5bbe0617ade957e6686e4"
+        }
+      ]
+    },
+    {
+      "key": "tirmidhi",
+      "title": "Jami\u02bf at-Tirmidhi",
+      "file": "tirmidhi.json",
+      "bytes": 4593048,
+      "sha256": "4aea373173abaa8104498ecb9fe8ce741b25c8414f737d015a5f6dee674b2185",
+      "sources": 3926,
+      "chunks": 4606,
+      "parts": [
+        {
+          "file": "tirmidhi.000.txt",
+          "bytes": 452441,
+          "sha256": "39b2d020a0495ff82de5266c7af30730c14152daba1945bd61ef9a594b092ee9"
+        },
+        {
+          "file": "tirmidhi.001.txt",
+          "bytes": 453675,
+          "sha256": "3b509d3912057757189fad8d5c632bd7faf540c61a38faecda0c1e0cdef2f6bd"
+        },
+        {
+          "file": "tirmidhi.002.txt",
+          "bytes": 452696,
+          "sha256": "ebccb46a16af668fd1af7796ec5da206a2ba43a6ab7b76bda8f139f2666bf94a"
+        },
+        {
+          "file": "tirmidhi.003.txt",
+          "bytes": 457632,
+          "sha256": "aac1012221fde781c00a1f980b57ca015b4249514adcfa36623b8c2d018127af"
+        },
+        {
+          "file": "tirmidhi.004.txt",
+          "bytes": 455847,
+          "sha256": "a510910725440460b846f2e86dd5cf35725ff2854cee2ede82fafabd31528503"
+        },
+        {
+          "file": "tirmidhi.005.txt",
+          "bytes": 450000,
+          "sha256": "bad6ef2514479d7430e71ca151eb55b2f7aac6aac2731971abe2b82758049d5f"
+        },
+        {
+          "file": "tirmidhi.006.txt",
+          "bytes": 450000,
+          "sha256": "ef8dcab6c422b7af2d0aa453a6d6324e31d385befdf87183821bdce076d22745"
+        },
+        {
+          "file": "tirmidhi.007.txt",
+          "bytes": 450000,
+          "sha256": "8e92762f858570feebd67f1c9d02a01708f52921639796b3b2129c37c510c0ce"
+        },
+        {
+          "file": "tirmidhi.008.txt",
+          "bytes": 450000,
+          "sha256": "b44fd52550681bc68c1a120db0dc447a94e9fa8db058344d1770b40d373bb793"
+        },
+        {
+          "file": "tirmidhi.009.txt",
+          "bytes": 450000,
+          "sha256": "f63a7f8d07df9167b8100bc872cc45e34a34a0b05d14bb0d758710649a09b9b9"
+        },
+        {
+          "file": "tirmidhi.010.txt",
+          "bytes": 70757,
+          "sha256": "72939c554bc0978e3b53cc01e950347a1dabfcbc9f6bbc099f880421a6e15be3"
+        }
+      ]
+    }
+  ]
+}
