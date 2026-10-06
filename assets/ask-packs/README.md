@@ -22,7 +22,14 @@ Sources:
   See LICENSE-model.txt. The model itself is downloaded separately from
   https://huggingface.co/Xenova/all-MiniLM-L6-v2.
 
-The Quran database is excluded. Quran quotations already in commentary remain.
+Qur'an packs (2026-10-06): `quran` (one source per verse: Saheeh
+International, Ruwwad and Wahiduddin Khan) and `mukhtasar` (Al-Mukhtasar fi
+Tafsir) are FORMAT v2, vectors only. They carry ids, titles, links, chunk
+offsets and vectors but no text: the app rebuilds each source's words from the
+translations already bundled in Huda and refuses the pack unless their SHA-256
+equals the pack's `textSha256`. No translation text is republished here.
+Built by scripts/build-ask-quran-packs.py with the same model and 192/160
+token windows.
 Source prose is preserved; vectors are retrieval data, not a confidence score
 or religious interpretation. Content should be read in context and checked with
 a qualified sheikh.
