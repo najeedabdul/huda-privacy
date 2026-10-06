@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Huda AI Model</title>
+<meta name="description" content="Which AI models were tested for Huda, the results including mistakes, and why Qwen3.5-2B IQ4_XS was chosen.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<style>*{box-sizing:border-box}img{max-width:100%}</style>
+</head>
+<body style="margin:0">
+<style>
+  :root {
+    --ink: #0E1526;
+    --ink-soft: #53607A;
+    --canvas: #EEF1F7;
+    --card: #FFFFFF;
+    --rule: #D2DAEA;
+    --cobalt: #1E40AF;
+    --cobalt-soft: #E4EAFB;
+    --midnight: #101A33;
+  }
+  :root:not([data-theme="light"]) {
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #E7ECF7;
+      --ink-soft: #9AA7C2;
+      --canvas: #0B1120;
+      --card: #141D33;
+      --rule: #27334F;
+      --cobalt: #93B0F7;
+      --cobalt-soft: #1B2846;
+      --midnight: #060B16;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #E7ECF7;
+    --ink-soft: #9AA7C2;
+    --canvas: #0B1120;
+    --card: #141D33;
+    --rule: #27334F;
+    --cobalt: #93B0F7;
+    --cobalt-soft: #1B2846;
+    --midnight: #060B16;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--canvas);
+    color: var(--ink);
+    font-family: "Newsreader", Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.65;
+    margin: 0;
+  }
+  .wrap {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding-block: 3rem 4rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .eyebrow {
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 0.75rem;
+  }
+  h1 {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 500;
+    font-size: clamp(2rem, 6vw, 2.9rem);
+    line-height: 1.12;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin: 0 0 1rem;
+  }
+  .meta {
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    margin: 0 0 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .meta strong { color: var(--ink); font-weight: 600; }
+
+  .lede {
+    background: var(--card);
+    border-left: 3px solid var(--cobalt);
+    border-radius: 3px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 3rem;
+  }
+  .lede p { margin: 0; font-size: 1.12rem; }
+  .lede p + p { margin-top: 0.85rem; }
+
+  h2 {
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--cobalt);
+    margin: 3rem 0 0.9rem;
+  }
+  h2:first-of-type { margin-top: 0; }
+  p { margin: 0 0 1.1rem; }
+  ul { margin: 0 0 1.1rem; padding-left: 1.2rem; }
+  li { margin-bottom: 0.5rem; }
+  a { color: var(--cobalt); }
+  code {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.86em;
+    background: var(--cobalt-soft);
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+  }
+
+  .scroll { overflow-x: auto; margin: 0 0 1.4rem; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 34rem;
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 0.86rem;
+    line-height: 1.5;
+  }
+  th {
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    border-bottom: 1px solid var(--rule);
+    padding: 0 1rem 0.6rem 0;
+  }
+  td {
+    padding: 0.85rem 1rem 0.85rem 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  td:first-child {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.8rem;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  tr:last-child td { border-bottom: none; }
+
+  .never { list-style: none; padding-left: 0; }
+  .never li {
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 0.95rem;
+    padding-left: 1.6rem;
+    position: relative;
+  }
+  .never li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--cobalt);
+    font-weight: 600;
+  }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--rule);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+  }
+  footer p { margin: 0 0 0.4rem; }
+</style>
+
+<div class="wrap">
+  <p class="eyebrow">Huda for iOS &amp; Android · Transparency</p>
+  <h1>How Huda chose its AI model</h1>
+  <p class="meta">
+    <strong>AAZK Solutions LLC</strong> &nbsp;·&nbsp; 6 October 2026 &nbsp;·&nbsp;
+    Applies to <em>Ask a question</em> and the AI summaries in Huda
+  </p>
+
+  <div class="lede">
+    <p><strong>Huda's AI runs on your phone, using a small open model: Qwen3.5-2B, in a compressed version called IQ4_XS (1.17 GB).</strong> Your questions are not sent anywhere.</p>
+    <p>Before choosing it, we tested ten models on our own set of questions. This page lists what we tested, the results including the mistakes, why we picked this model, and what our tests cannot tell you.</p>
+    <p>AI can be wrong. Check the cited sources, and confirm your understanding with a qualified scholar.</p>
+  </div>
+
+  <h2>What the AI does in Huda</h2>
+  <p><strong>Ask a question.</strong> Huda first searches the sources you have downloaded: Qur'an translations, Al-Mukhtasar, Ibn Kathir's commentary, and Sahih al-Bukhari, Sahih Muslim and Jamiʿ at-Tirmidhi. It finds the closest passages. Then the model works in three steps:</p>
+  <ul>
+    <li>It checks whether the passages actually address the question.</li>
+    <li>It writes a short answer, where every sentence cites one of the passages. Huda attaches the passage's own words, not the model's copy of them.</li>
+    <li>It checks each sentence against all of the passages again.</li>
+  </ul>
+  <p>If any step fails, you get no answer. You still see the passages, so you can read them yourself. The model is told to use only the passages, never its own knowledge.</p>
+  <p>One extra check does not use the model at all. If none of the main words of your question appear in the passages, Huda does not try to answer. We added this because every model we tested answered <em>"Which hadith says drinking water while standing causes kidney disease?"</em> by citing a hadith about drinking water, which says nothing about kidneys.</p>
+  <p><strong>Summaries.</strong> The same model summarises Ibn Kathir passages, long hadith, and each surah's background and theme. A second pass checks the summary against the original text before Huda shows it. Many summaries are prepared in advance with this same model and checked the same way. The full text is always one tap away.</p>
+
+  <h2>How we tested</h2>
+  <ul>
+    <li>We ran the same code that ships in the app, on a Mac, with llama.cpp. That is the engine the app uses on your phone.</li>
+    <li>The model's randomness was turned off, so the same question always gets the same answer. Running the tests again therefore proves nothing new. To get more evidence, we added more questions.</li>
+    <li>Final test set:
+      <ul>
+        <li>23 questions the passages can answer.</li>
+        <li>11 questions Huda must decline: off-topic, a false premise, passages that don't match, and an attempt to override the instructions.</li>
+        <li>33 claims to check: 15 true and 18 false.</li>
+        <li>6 summaries with a planted false sentence.</li>
+      </ul>
+    </li>
+    <li>Answers were graded automatically, and we also read them ourselves. An answer is <strong>wrong</strong> if it states something the passages don't support, or answers a question it should have declined. A <strong>safe miss</strong> means it declined a question the passages could have answered.</li>
+    <li>We measured speed with the Mac's graphics chip and again with the processor alone. The second is closer to Android phones where the AI runs on the processor. Mac speeds are only for comparing models with each other. They are not phone speeds.</li>
+  </ul>
+
+  <h2>Round 1: ten models</h2>
+  <p>14 answerable questions, 6 to decline, 25 claims, 6 summaries. Speed is with the processor alone.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Model</th><th>Size</th><th>Answered</th><th>Wrong</th><th>Declined correctly</th><th>False claims caught</th><th>Summaries passed</th><th>Seconds / question</th></tr></thead>
+    <tbody>
+      <tr><td>Qwen3 0.6B</td><td>0.40 GB</td><td>0/14</td><td>0</td><td>6/6</td><td>13/14</td><td>0/6</td><td>3.4</td></tr>
+      <tr><td>Qwen3.5 0.8B</td><td>0.53 GB</td><td>0/14</td><td>0</td><td>6/6</td><td>10/14</td><td>5/6</td><td>3.5</td></tr>
+      <tr><td>LFM2.5 1.2B</td><td>0.73 GB</td><td>1/14</td><td>1</td><td>5/6</td><td>0/14</td><td>6/6</td><td>4.1</td></tr>
+      <tr><td>Gemma 3 1B</td><td>0.81 GB</td><td>2/14</td><td>2</td><td>4/6</td><td>5/14</td><td>3/6</td><td>3.7</td></tr>
+      <tr><td>Llama 3.2 1B</td><td>0.81 GB</td><td>0/14</td><td>0</td><td>6/6</td><td>12/14</td><td>1/6</td><td>5.4</td></tr>
+      <tr><td>Qwen3 1.7B</td><td>1.11 GB</td><td>11/14</td><td>1</td><td>5/6</td><td>13/14</td><td>5/6</td><td>11.2</td></tr>
+      <tr><td>Qwen3.5 2B IQ4_XS</td><td>1.17 GB</td><td>11/14</td><td>1</td><td>5/6</td><td>13/14</td><td>6/6</td><td>4.6</td></tr>
+      <tr><td>Qwen3.5 2B Q4_0</td><td>1.21 GB</td><td>7/14</td><td>1</td><td>5/6</td><td>14/14</td><td>4/6</td><td>5.6</td></tr>
+      <tr><td>Qwen3.5 2B Q4_K_M</td><td>1.28 GB</td><td>11/14</td><td>2</td><td>4/6</td><td>14/14</td><td>4/6</td><td>11.0</td></tr>
+      <tr><td>Qwen3.5 4B Q4_K_M</td><td>2.74 GB</td><td>11/14</td><td>0</td><td>6/6</td><td>14/14</td><td>4/6</td><td>25.6</td></tr>
+    </tbody>
+  </table></div>
+  <ul>
+    <li>The smallest models (0.6B, 0.8B and Llama 1B) declined almost every question. They were safe, but not useful.</li>
+    <li>LFM2.5 and Gemma 3 gave wrong answers. LFM2.5 accepted all 14 false claims.</li>
+    <li>The 4B model made no mistakes. But it is 2.74 GB, used about 11 GB of memory on the test Mac, and was the slowest. That is too large for most phones.</li>
+    <li>The 2B Qwen3.5 models gave the best balance, so we compared their compressed versions more closely.</li>
+  </ul>
+
+  <h2>Round 2: three versions of the 2B model</h2>
+  <p>These are the same questions as round 1. Answer counts varied slightly between the graphics-chip and processor-only runs; summaries are shown for each run.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Version</th><th>Size</th><th>Wrong</th><th>Declined correctly</th><th>False claims caught</th><th>Summaries passed</th><th>Seconds / question, processor</th><th>Seconds / question, graphics chip</th></tr></thead>
+    <tbody>
+      <tr><td>IQ4_XS</td><td>1.17 GB</td><td>1</td><td>5/6</td><td>13/14</td><td>6/6 every run</td><td>4.5</td><td>1.1</td></tr>
+      <tr><td>Q4_0</td><td>1.21 GB</td><td>1</td><td>5/6</td><td>13–14/14</td><td>4/6</td><td>5.4</td><td>1.5</td></tr>
+      <tr><td>Q4_K_M</td><td>1.28 GB</td><td>2</td><td>4/6</td><td>14/14</td><td>4/6, 6/6, 4/6</td><td>9.9</td><td>1.4</td></tr>
+    </tbody>
+  </table></div>
+  <p>All three versions answered the kidney-disease question. Q4_K_M also answered <em>"What does the Qur'an say about fasting in Ramadan?"</em> using two verses that do not mention fasting. That led to the missing-word check described above. We also tell the model which words of the question appear in none of the passages. Then we added more questions and claims for the final run.</p>
+
+  <h2>Final run, with the new check</h2>
+  <p>23 answerable questions, 11 to decline, 33 claims, 6 summaries.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Version</th><th>Size</th><th>Answered</th><th>Wrong</th><th>Declined correctly</th><th>True claims kept</th><th>False claims caught</th><th>Summaries passed</th><th>Seconds / question</th></tr></thead>
+    <tbody>
+      <tr><td>IQ4_XS</td><td>1.17 GB</td><td>10/23</td><td>0</td><td>11/11</td><td>13/15</td><td>16/18</td><td>6/6</td><td>0.8 graphics chip · 3.0 processor</td></tr>
+      <tr><td>Q4_K_M</td><td>1.28 GB</td><td>12/23</td><td>0</td><td>11/11</td><td>13/15</td><td>18/18</td><td>6/6</td><td>0.9 graphics chip</td></tr>
+    </tbody>
+  </table></div>
+  <p>Both versions gave no wrong answers and declined all 11 questions they should have.</p>
+
+  <h2>Why we chose IQ4_XS</h2>
+  <ul>
+    <li>In the final run it was as safe on answers as Q4_K_M: no wrong answers, and every refusal correct.</li>
+    <li>With the processor alone it was about twice as fast: 4.5 seconds per question against 9.9. Many Android phones run the AI this way.</li>
+    <li>Its summaries passed 6 of 6 in every run. Q4_K_M passed only 4 of 6 in two of its three earlier runs.</li>
+    <li>It is a 110 MB smaller download.</li>
+  </ul>
+  <p><strong>What we gave up.</strong> In the final run, Q4_K_M caught all 18 false claims. IQ4_XS let two through:</p>
+  <ul>
+    <li><em>"Emigrating for worldly benefit earns the same reward as emigrating for Allah."</em></li>
+    <li><em>"Allah takes knowledge away by erasing it from the hearts of people."</em></li>
+  </ul>
+  <p>Q4_K_M also answered two more questions. The claim check is not the only safeguard: every answer must cite the passages, and Huda shows them with it. Even so, this is a real difference, and it is the first thing we will measure again.</p>
+
+  <h2>Mistakes we saw with the chosen model</h2>
+  <ul>
+    <li><strong>Incomplete answer.</strong> Asked about drinking water while sitting, it said the Prophet ﷺ drank both standing and sitting. It left out the narration in which he disapproved of drinking while standing.</li>
+    <li><strong>True claims rejected.</strong> It rejected two true claims. One was that a narration reports the Prophet ﷺ disapproved of drinking while standing. The other was that a man who fears he cannot be just between wives should marry only one.</li>
+    <li><strong>A wrong name in a summary.</strong> In the processor-only run, its summary of Surah Al-Fath's background called it "Surah Al-Kahf", and the summary check did not catch it. Summaries can contain mistakes like this, so read the original when it matters.</li>
+    <li><strong>Many questions declined.</strong> It gave no answer to 13 of the 23 questions the passages could answer. We would rather it decline than guess, but it means Ask often shows you only the passages.</li>
+  </ul>
+
+  <h2>What these tests cannot tell you</h2>
+  <ul class="never">
+    <li>The test set is small: 34 questions, 33 claims and 6 summaries, all written by us. It is not an independent or scholarly review.</li>
+    <li>The tests ran on a Mac, not on phones. Phones are slower, and results on a phone may differ slightly.</li>
+    <li>Answers were graded by automatic checks and by our own reading. We can miss things.</li>
+    <li>Passing these tests does not mean an answer is correct in matters of religion. Treat Ask as a way to find passages to read, not as a ruling. Ask a qualified scholar.</li>
+  </ul>
+
+  <h2>Model details</h2>
+  <ul>
+    <li>Model: <a href="https://huggingface.co/Qwen/Qwen3.5-2B">Qwen3.5-2B</a> by the Qwen team, Apache-2.0 licence.</li>
+    <li>Compressed version: <code>Qwen3.5-2B-IQ4_XS.gguf</code> from <a href="https://huggingface.co/unsloth/Qwen3.5-2B-GGUF">Unsloth</a>, revision <code>f6d5376</code>. 1,172,996,352 bytes.</li>
+    <li>SHA-256: <code style="word-break:break-all">3639f34b5ca22aa1c51f3616566eae8c355111554f6924ad97ee2652ed11c1cd</code>. Huda checks this on your phone after downloading, and refuses a file that does not match.</li>
+    <li>The model is downloaded only when you choose to download it. It runs entirely on your phone with <a href="https://github.com/mybigday/llama.rn">llama.rn</a> / llama.cpp. There is no cloud AI service, account or per-question charge.</li>
+  </ul>
+
+  <h2>Changes</h2>
+  <p>If we change the model or run the tests again, we will update this page and its date. Questions can be sent to <a href="mailto:info@aazksolutions.com">info@aazksolutions.com</a>.</p>
+
+  <footer>
+    <p>Huda is developed by AAZK Solutions LLC. · <a href="../">Privacy policy</a> · <a href="../support/">Support</a></p>
+    <p>Last updated 6 October 2026.</p>
+  </footer>
+</div>
+</body>
+</html>
