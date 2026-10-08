@@ -185,26 +185,20 @@
   <p class="eyebrow">Huda for iOS &amp; Android · Transparency</p>
   <h1>How Huda chose its AI model</h1>
   <p class="meta">
-    <strong>AAZK Solutions LLC</strong> &nbsp;·&nbsp; 6 October 2026 &nbsp;·&nbsp;
-    Applies to <em>Ask a question</em> and the AI summaries in Huda
+    <strong>AAZK Solutions LLC</strong> &nbsp;·&nbsp; Updated 8 October 2026 &nbsp;·&nbsp;
+    Current workflow and historical model evaluation
   </p>
 
   <div class="lede">
-    <p><strong>Huda's AI runs on your phone, using a small open model: Qwen3.5-2B, in a compressed version called IQ4_XS (1.17 GB).</strong> Your questions are not sent anywhere.</p>
-    <p>Before choosing it, we tested ten models on our own set of questions. This page lists what we tested, the results including the mistakes, why we picked this model, and what our tests cannot tell you.</p>
-    <p>AI can be wrong. Check the cited sources, and confirm your understanding with a qualified scholar.</p>
+    <p><strong>Huda now shows references for a question instead of generating a religious answer.</strong> Its small offline search model finds related passages in downloaded source packs. Your question is not sent to an AI service.</p>
+    <p>Hadith, tafsir, and surah background summaries are prepared and checked in advance on a Mac, then included with the app. Huda does not regenerate them on your phone. The former 1.17 GB Qwen3.5-2B phone download is no longer needed for Ask or summaries.</p>
+    <p>AI summaries can still miss details. Read the full original sources, especially where reports differ, and confirm religious rulings with a qualified scholar.</p>
   </div>
 
-  <h2>What the AI does in Huda</h2>
-  <p><strong>Ask a question.</strong> Huda first searches the sources you have downloaded: Qur'an translations, Al-Mukhtasar, Ibn Kathir's commentary, and Sahih al-Bukhari, Sahih Muslim and Jamiʿ at-Tirmidhi. It finds the closest passages. Then the model works in three steps:</p>
-  <ul>
-    <li>It checks whether the passages actually address the question.</li>
-    <li>It writes a short answer, where every sentence cites one of the passages. Huda attaches the passage's own words, not the model's copy of them.</li>
-    <li>It checks each sentence against all of the passages again.</li>
-  </ul>
-  <p>If any step fails, you get no answer. You still see the passages, so you can read them yourself. The model is told to use only the passages, never its own knowledge.</p>
-  <p>One extra check does not use the model at all. If none of the main words of your question appear in the passages, Huda does not try to answer. We added this because every model we tested answered <em>"Which hadith says drinking water while standing causes kidney disease?"</em> by citing a hadith about drinking water, which says nothing about kidneys.</p>
-  <p><strong>Summaries.</strong> The same model summarises Ibn Kathir passages, long hadith, and each surah's background and theme. A second pass checks the summary against the original text before Huda shows it. Many summaries are prepared in advance with this same model and checked the same way. The full text is always one tap away.</p>
+  <h2>What Huda does now</h2>
+  <p><strong>Ask a question.</strong> Huda searches downloaded Qur'an translations, Al-Mukhtasar, Ibn Kathir commentary, and Hadith collections. It lists related references with source excerpts and links to the full text. It does not write an answer or decide how contrasting reports should be reconciled.</p>
+  <p><strong>Summaries.</strong> Huda displays a prepared summary only when that exact source text has a checked entry. Otherwise it offers the original source. Short passages remain verbatim. A Mac generation run uses Qwen3.5-2B IQ4_XS and source checks; entries that fail do not ship. The full text is always available.</p>
+  <h2>Historical evaluation of the former on-device answer model</h2>
 
   <h2>How we tested</h2>
   <ul>
