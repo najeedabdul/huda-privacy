@@ -185,7 +185,7 @@
   <p class="eyebrow">Huda for iOS &amp; Android</p>
   <h1>Privacy Policy</h1>
   <p class="meta">
-    <strong>AAZK Solutions LLC</strong> &nbsp;·&nbsp; Effective 30 September 2026 &nbsp;·&nbsp;
+    <strong>AAZK Solutions LLC</strong> &nbsp;·&nbsp; Effective 12 October 2026 &nbsp;·&nbsp;
     Applies to the Huda mobile app (<code>com.aazksolutions.huda</code>)
   </p>
 
@@ -208,7 +208,8 @@
   </ul>
 
   <h2>Location</h2>
-  <p>If you choose to share your location, Huda uses it to calculate prayer times and the direction of the qibla. That calculation happens entirely on your device using an offline astronomical library. Your coordinates are stored only on your device so the app can work without asking again, and they are never sent to us.</p>
+  <p><strong>Optional Home weather:</strong> After you enable local weather, Huda sends your selected coordinates rounded to two decimal places (about 1 km) to api.open-meteo.com. The provider also receives network information such as your IP address. Weather refreshes while the app is open; there is no background location tracking. You can turn it off in Settings. A single approximate-area weather result is cached on your device; saved conditions are labelled and shown for no more than 24 hours. Five-day forecasts load only when you open the weather panel. Moon phase is calculated entirely on your device and does not predict local crescent visibility. <a href="https://open-meteo.com/en/privacy">Open-Meteo privacy</a>.</p>
+  <p>If you choose to share your location, Huda uses it to calculate prayer times and the direction of the qibla. That calculation happens entirely on your device using an offline astronomical library. For these offline calculations, your coordinates are stored on your device so the app can work without asking again. They are never sent to us. Optional weather and external map sharing are described separately in this section.</p>
   <p><strong>Phone Mosque Finder</strong> opens an external map only after you confirm sharing. Huda sends the search term “mosques” and your selected coordinates rounded to three decimal places (roughly 100 metres in latitude) to Apple Maps or Google Maps. The coordinates may come from your saved location, manual entry, or a current location you request. Opening the page does not send a location. You can cancel sharing or enter coordinates without granting device-location permission. Your saved prayer location is unchanged. The chosen provider receives the request and may receive network information such as your IP address; its privacy policy applies.</p>
   <p><strong>Car displays and older versions:</strong> CarPlay and Android Auto mosque discovery, and older phone versions, continue to query OpenStreetMap’s Overpass services using rounded coordinates. Those services receive your IP address. Directions open the selected external maps service. <a href="https://www.apple.com/legal/privacy/data/en/apple-maps/">Apple Maps privacy</a> · <a href="https://policies.google.com/privacy">Google privacy</a>.</p>
   <p>You can decline the permission or revoke it later in your system settings, and you can type a latitude and longitude instead, in Settings &gt; Prayer. Prayer times, the qibla and Mosque Finder all work from typed coordinates; only the live compass needs your permission.</p>
@@ -255,6 +256,11 @@
           <td>Only after you confirm sharing and opening Maps</td>
         </tr>
         <tr>
+          <td>api.open-meteo.com</td>
+          <td>Current weather and forecasts for approximate coordinates</td>
+          <td>Only after you enable Home weather; refreshes while the app is open</td>
+        </tr>
+        <tr>
           <td>u.expo.dev</td>
           <td>Checks whether an app update is available</td>
           <td>Automatically, when the app starts</td>
@@ -292,7 +298,7 @@
 
   <footer>
     <p>Huda is developed by AAZK Solutions LLC.</p>
-    <p>Last updated 30 September 2026.</p>
+    <p>Last updated 12 October 2026.</p>
   </footer>
 </div>
 </body>
