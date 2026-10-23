@@ -8,7 +8,8 @@ Sources:
 
 - Abridged English Tafsir Ibn Kathir, via https://github.com/spa5k/tafsir_api.
   The text matches Huda's existing bundled edition and canonical passage ranges.
-- English Sahih al-Bukhari, Sahih Muslim and Jamiʿ at-Tirmidhi, via
+- English Sahih al-Bukhari, Sahih Muslim, Jamiʿ at-Tirmidhi, Sunan Abi Dawud,
+  Sunan an-Nasa’i and Sunan Ibn Majah, via
   https://github.com/fawazahmed0/hadith-api at revision
   `df57907be35291c91ad6a6691180e22ca9920784`.
   Edition metadata credits Muhsin Khan (Bukhari) and Abdul Hamid Siddiqui
@@ -40,3 +41,11 @@ in manifest order to reconstruct its JSON. The app checks each part's SHA-256
 and the complete pack's SHA-256 before a transactional SQLite import.
 `manifest.json` records exact bytes, hashes, source counts and chunk counts.
 Consumers must pin URLs to the immutable asset commit, never a moving branch.
+
+
+2026-10-23 additions: Abi Dawud (5,272 nonempty English sources, 6,020
+vectors), an-Nasa’i (5,679 sources, 6,300 vectors), Ibn Majah (4,340 sources,
+4,728 vectors). Empty English entries are omitted. These packs preserve each
+source’s grading list and exact text; embeddings are retrieval aids, not grades.
+New embeddings use one passage per inference, 192-token windows/160-token
+stride and normalized 384-dimensional int8 vectors, matching the phone path.
