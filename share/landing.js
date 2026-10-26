@@ -2,7 +2,7 @@
 (function (root) {
   'use strict';
   const APP_STORE = 'https://apps.apple.com/us/app/huda-quran-prayer-adhkar/id6812155953';
-  const SELECTORS = new Set(['id', 'surah', 'verse', 'ayah', 'chapter', 'hadith', 'focus', 'section', 'period', 'item', 'part', 'collection', 'topic', 'tab']);
+  const SELECTORS = new Set(['id', 'surah', 'verse', 'ayah', 'chapter', 'hadith', 'focus', 'section', 'period', 'item', 'part', 'collection', 'topic', 'tab', 'mode', 'page', 'view', 'info', 'category', 'entry', 'kind', 'tool', 'filter', 'salah']);
 
   function sharedRoute(search) {
     const input = new URLSearchParams(search).get('route');
