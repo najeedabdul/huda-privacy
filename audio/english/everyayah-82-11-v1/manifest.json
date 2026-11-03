@@ -1,0 +1,24 @@
+{
+  "source": "https://everyayah.com/data/English/Sahih_Intnl_Ibrahim_Walk_192kbps/000_versebyverse.zip",
+  "archiveMember": "082011.mp3",
+  "surah": 82,
+  "ayah": 11,
+  "edition": "en-saheeh-walk",
+  "name": "Saheeh International, Ibrahim Walk",
+  "bytes": 50910,
+  "sha256": "7a6e4038cc3c2ece321e214d3564bcbe21f190d44a63c8ba855a2e9a5e749397",
+  "recordingBytesUnchanged": true,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "bit_rate": "192000"
+      }
+    ],
+    "format": {
+      "duration": "2.121250"
+    }
+  }
+}
