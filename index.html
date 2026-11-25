@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Huda Privacy Policy</title>
-<meta name="description" content="Privacy policy for the Huda mobile app by AAZK Solutions LLC. Huda has no analytics or tracking. Optional encrypted bookmark sync uses your Google Drive.">
+<meta name="description" content="Privacy policy for the Huda mobile app by AAZK Solutions LLC. Huda has no analytics or tracking. Optional bookmark sync uses your Google Drive.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
 <style>*{box-sizing:border-box}img{max-width:100%}</style>
 </head>
@@ -190,15 +190,16 @@
   </p>
 
   <div class="lede">
-    <p><strong>Huda does not collect your personal information.</strong> Core features need no account. There is no analytics, advertising or tracking. Optional Google sign-in is used only to sync encrypted bookmarks through your own Google Drive.</p>
-    <p>Prayer times and the qibla are calculated on your device, and your location is never sent to us. Phone Mosque Finder asks before sending approximate coordinates to Apple Maps or Google Maps. Car-display mosque discovery and older app versions use OpenStreetMap’s Overpass service when you use that feature. Your reading history, memorisation progress, recitation and settings stay on your device. Bookmarks and their categories leave it only if you explicitly enable encrypted bookmark sync or export a manual backup. We have no server that stores anything about you, because we have no server.</p>
+    <p><strong>Huda does not collect your personal information.</strong> Core features need no account. There is no analytics, advertising or tracking. Optional Google sign-in is used only to sync bookmarks through your own Google Drive.</p>
+    <p>Prayer times and the qibla are calculated on your device, and your location is never sent to us. Phone Mosque Finder asks before sending approximate coordinates to Apple Maps or Google Maps. Car-display mosque discovery and older app versions use OpenStreetMap’s Overpass service when you use that feature. Your reading history, memorisation progress, recitation and settings stay on your device. Bookmarks and their categories leave it only if you explicitly enable bookmark sync or export a manual backup. We have no server that stores anything about you, because we have no server.</p>
   </div>
 
   <h2>Optional Google bookmark sync</h2>
   <p>You can use Huda without signing in. If you enable bookmark sync, Google authenticates your account and gives Huda permission to read and write only Huda’s hidden app-data folder in your Google Drive (<code>drive.appdata</code>). Huda does not request access to your ordinary Drive files, contacts, mail or calendar. Google may provide your basic account profile; Huda uses the account identifier to keep accounts separate and displays your email on the device. We do not receive your Google password or operate a server that receives your account details or bookmarks.</p>
-  <p>Only Qur’an bookmarks, Hadith bookmarks and their category names sync. Huda encrypts these on the device with AES-256-GCM before uploading them to Drive. The random encryption key is kept in the device’s secure storage and never uploaded alongside the data. Save the recovery key to unlock bookmarks on another device. Google sign-in alone cannot decrypt them; Huda cannot recover a lost key. Sync keys and account metadata are excluded from Huda’s manual backups.</p>
-  <p>Sync runs after bookmark changes, when you open Huda and when the operating system permits background execution. Background timing is not guaranteed. Google receives encrypted files, random sync identifiers, your account and network information such as your IP address. Hidden app data uses your Google storage allowance. Google’s privacy policy applies: <a href="https://policies.google.com/privacy">Google privacy</a>.</p>
-  <p>Disconnect Google in Preferences → App &amp; devices → Bookmark sync to stop future sync on this device and remove its stored key and consent. Local bookmarks and existing encrypted Drive data remain. Delete cloud bookmarks removes the encrypted sync files and disconnects this device; a small deletion marker containing only the random sync identifier remains to stop previously offline devices from restoring deleted data. Their local bookmarks remain, and they stop syncing when they next connect. You can also remove Huda’s access from your Google account. Uninstalling Huda alone does not delete encrypted Drive files; on iOS, secure Keychain items can persist after uninstall, but sync requires a new in-app consent record.</p>
+  <p>Only Qur’an and Hadith bookmarks, their categories and the saved playback choices attached to a bookmark sync. New connections use Google account recovery. Signing in with the same Google account can restore your bookmarks from Huda’s private app-data folder. Google protects this data in transit and at rest, and Google and anyone able to access your account can recover it. Huda operates no sync server.</p>
+  <p>Earlier key-protected backups keep their existing protection unless you choose to migrate them. The original recovery key stays on the device. If you choose Google account recovery, Huda verifies the account-protected copy before retiring the earlier backup.</p>
+  <p>Sync runs after bookmark changes, on app open and when the operating system permits background execution. Google receives bookmark data, sync identifiers, your account and network information. Notes, reading history and location stay on your device.</p>
+  <p>Disconnect Google in Preferences → App &amp; devices → Bookmark sync to stop syncing on this device. Delete cloud bookmarks removes the connected cloud backup and keeps bookmarks on your phones. A deletion marker prevents older devices from restoring the deleted sync.</p>
 
   <h2>What stays on your device</h2>
   <p>Huda saves personal data in your device’s private storage. The items below stay local except for bookmarks/categories when you enable sync, or data you explicitly export in a manual backup:</p>
@@ -294,7 +295,7 @@
   <p>Core reading features can be used without an account. Optional Google sign-in and Drive sync are subject to Google’s account eligibility and parental controls. Huda does not operate an account database or collect children’s profiles on a server.</p>
 
   <h2>Your rights</h2>
-  <p>Data protection laws give you rights to access, correct, export and delete the personal data a company holds about you. We hold none, so there is nothing for us to return or erase. You control local data through the app and your device settings. Optional encrypted cloud bookmarks remain in your Google Drive until deleted; disconnecting or uninstalling the app does not delete them. Use Delete cloud bookmarks before uninstalling to remove that encrypted sync.</p>
+  <p>Data protection laws give you rights to access, correct, export and delete the personal data a company holds about you. We hold none, so there is nothing for us to return or erase. You control local data through the app and your device settings. Optional cloud bookmarks remain in your Google Drive until deleted; disconnecting or uninstalling the app does not delete them. Use Delete cloud bookmarks before uninstalling to remove that cloud sync.</p>
 
   <h2>Changes to this policy</h2>
   <p>If this policy changes, the revised version will be posted at this address with a new effective date. Material changes affecting how the app handles your information will also be noted in the app's release notes.</p>
